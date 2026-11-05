@@ -1,7 +1,7 @@
 <?php
 
 require_once 'IMachineActions.php';
-
+require_once 'IHeater.php';
 class ElectricHeater implements IMachineActions, IHeater
 {
     public function turnOn(): void
