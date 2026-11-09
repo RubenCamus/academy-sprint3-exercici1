@@ -15,6 +15,10 @@ class Athlete {
     public function getCountry(): string {
         return $this->country;
     }
+    public function __toString()
+    {
+        return 'Athlete '. $this->name .' from '.  $this->country;
+    }
 }
 
 

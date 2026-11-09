@@ -1,6 +1,6 @@
 <?php
 
-class Results {
+class Result {
     public function __construct(private Athlete $athlete, private Event $event, private string $medal)
     {}
     public function getAthlete(): Athlete {
@@ -11,6 +11,10 @@ class Results {
     }
     public function getMedal(): string {
         return $this->medal;
+    }
+    public function __toString()
+    {
+        return $this->athlete->__toString() . ' got ' . $this->medal. ' on '. $this->event->__toString() ;
     }
 
 }

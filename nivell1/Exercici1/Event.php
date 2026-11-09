@@ -15,5 +15,9 @@ class Event {
     public function getEvent(): string {
         return $this->event;
     }
+    public function __toString()
+    {
+        return 'event: '. $this->event .' on '.  $this->date;
+    }
 }
 ?>

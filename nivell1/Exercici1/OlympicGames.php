@@ -1,8 +1,8 @@
 <?php
-require_once('Results.php');
+require_once('Result.php');
 class OlympicGames {
-    public function printData(Results $result): void {
-        echo ' Athlete: ' . $result->getAthlete()->getName() . ' in: ' . $result->getEvent()->getEvent() . ' got : ' . $result->getMedal() . PHP_EOL;
+    public function printData(Result $result): void {
+        echo $result->__toString() . PHP_EOL;
     }
 }
 
