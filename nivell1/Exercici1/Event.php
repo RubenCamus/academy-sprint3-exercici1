@@ -9,10 +9,10 @@ class Event {
         $this->event = $event;
         $this->date = $date;
     }
-    public function getDate() {
+    public function getDate(): string {
         return $this->date;
     }
-    public function getEvent() {
+    public function getEvent(): string {
         return $this->event;
     }
 }

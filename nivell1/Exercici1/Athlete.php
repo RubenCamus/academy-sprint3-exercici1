@@ -9,10 +9,10 @@ class Athlete {
         $this->name = $name;
         $this->country = $country;
     }
-    public function getName() {
+    public function getName(): string {
         return $this->name;
     }
-    public function getCountry() {
+    public function getCountry(): string {
         return $this->country;
     }
 }
